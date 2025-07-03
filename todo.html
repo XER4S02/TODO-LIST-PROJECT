@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <style>
+    button[type="button"],button[type="submit"]{
+          margin-top: 10px;
+
+    }
+    
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKSOY TO-DO</title>
+    <meta name="description" content="Bu bir Mustafa Aksoy To-Do List projesidir. Bu proje ile yapılacaklar listenizi oluşturabilir ve aratabilirsiniz.">
+    <meta name="author" content="Mustafa AKSOY">
+    <meta name="keywords" content="Mustafa AKSOY,To-Do List,Görev,Task">
+    <link rel="icon" href="Resimler/favicon-16x16.png" type="img/png">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="card w-100 mt-2">
+      <div class="card-header">
+        <h5 style="justify-content: center; display: flex;">AKSOY TO-DO LIST</h5>
+      </div>
+
+      <div class="card-body">
+        <form id="todoAddForm">
+          <h5>Görev Oluştur</h5>
+          <input type="text" id="inputTodoGiriniz" class="form-control" placeholder="Görev Giriniz">
+          <button id="buttonTodoEkle" type="submit" class="btn btn-primary">Görev Ekle</button>
+          <hr>
+                  <h5 class="card-title">Görev Bul</h5>
+
+          <input type="text" id="inputTodoAra" class="form-control" placeholder="Görev Arayınız">
+          <button type="button" id="buttonTodoAra" class="btn btn-primary">Görev Ara</button>
+        </form>
+      </div>
+      <div class="card-body" style="margin-top: -45px;">
+        <hr/>
+        <h5 class="card-title">Görev Listesi</h5>
+                    <ul class="list-group">
+                      </ul>
+            <button type="button" id="buttonTodoTemizle" class="btn btn-primary">Tümünü Temizle</button>
+        </div>
+      </div> 
+    </div> 
+  </div>  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
